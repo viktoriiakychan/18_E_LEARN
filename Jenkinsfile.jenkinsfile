@@ -15,7 +15,7 @@ pipeline  {
             steps {
                 echo 'Creating docker image ...'
                 dir('.'){
-                    sh "docker build -t --no-cache viktoriiakychan/website . "
+                    sh "docker build --no-cache -t viktoriiakychan/website . "
                 }
             }
         }
